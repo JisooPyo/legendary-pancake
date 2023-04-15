@@ -42,7 +42,7 @@ public class RockScissorPaperProblem {
 
 /*
 
-다른 사람의 풀이
+다른 사람의 풀이 StringBuilder, append메소드, toCharArray메소드,for문,switch문 사용.
 
     public String solution(String rsp) {
         char[] cRsp = rsp.toCharArray();

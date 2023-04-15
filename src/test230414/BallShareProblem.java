@@ -116,6 +116,8 @@ public class BallShareProblem {
 
 /*
 
+다른 사람의 풀이 : 재귀함수 사용.
+
     public long solution(int balls, int share) {
         share = Math.min(balls - share, share);
 
