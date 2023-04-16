@@ -40,3 +40,4 @@ public class PlusOfHiddenNumProblem {
 
 
 // Character.getNumericValue
+// .replaceAll("[^0-9]", "")

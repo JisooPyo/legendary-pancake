@@ -22,3 +22,6 @@ public class RidOfVowelsProblem {
 	}
 
 }
+
+
+// replaceAll
