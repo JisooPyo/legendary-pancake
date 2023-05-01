@@ -25,8 +25,7 @@ public class Lev0_18 {
 	}
 
 	public int solution(int M, int N) {
-		int answer = 0;
-		return answer;
+		return (N-1)+N*(M-1);
 	}
 
 }
