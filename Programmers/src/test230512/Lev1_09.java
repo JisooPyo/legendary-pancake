@@ -2,6 +2,7 @@
 package test230512;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class Lev1_09 {
     public static void main( String[] args ) {
@@ -15,26 +16,42 @@ public class Lev1_09 {
     }
 
     public int[] solution( int N, int[] stages ) {
-        Arrays.sort( stages );
-        int[] answer = new int[N + 1];
-        double[] failure_rate = new double[N + 1];
-        int clear = 0;
-        int unclear = 0;
-        System.out.println( Arrays.toString( stages ) );
-        for ( int i = 1 ; i <= N ; i++ ) {
-            clear = clear - unclear;
-            if ( clear == 0 ) {
-                clear = stages.length;
-                for ( int j = 0 ; j < stages.length ; j++ ) {
-
-                }
-            }
-
+        int[] ind = new int[N + 2];
+        for ( int i = 0 ; i < stages.length ; i++ ) {
+            ind[stages[i]]++;
         }
 
+        double[][] failure_rate = new double[N][2];
+        int clear = stages.length;
+        for ( int i = 0 ; i < N ; i++ ) {
+            int unclear = ind[i + 1];
+            if ( clear == 0 ) {
+                failure_rate[i][0] = 0;
+                failure_rate[i][1] = i + 1;
+            } else {
+                failure_rate[i][0] = (double) ( unclear ) / clear;
+                failure_rate[i][1] = i + 1;
+            }
+            clear = clear - unclear;
 
-        return answer;
+        }
+        Arrays.sort( failure_rate, new Comparator< double[] >() {
+            @Override
+            public int compare( double[] o1, double[] o2 ) {
+                return Double.compare( o2[0], o1[0] );
+            }
+        } );
+
+        int ans[] = new int[N];
+        for ( int i = 0 ; i < N ; i++ ) {
+            ans[i] = (int) ( failure_rate[i][1] );
+        }
+
+        return ans;
     }
 }
 
+// 1, 6, 7, 9, 13, 23, 24, 25
+
+// 0으로 나눠지는 것 따로 처리 후 끝!
 
