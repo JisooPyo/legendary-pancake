@@ -1,5 +1,5 @@
 // 폰켓몬
-package test2305;
+package test230510;
 
 import java.util.HashSet;
 

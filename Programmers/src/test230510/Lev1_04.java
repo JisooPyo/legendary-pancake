@@ -1,5 +1,5 @@
 // 모의고사
-package test2305;
+package test230510;
 
 import java.util.ArrayList;
 import java.util.Arrays;

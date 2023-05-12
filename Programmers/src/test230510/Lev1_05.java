@@ -1,5 +1,5 @@
 // 소수 찾기
-package test2305;
+package test230510;
 
 public class Lev1_05 {
     public static void main( String[] args ) {
