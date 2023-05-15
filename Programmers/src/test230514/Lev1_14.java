@@ -33,15 +33,15 @@ public class Lev1_14 {
                 zero++;
             }
         }
-        if(equal==0 && zero ==0){
-            answer[0]=6;
-            answer[1]=6;
-        } else if(equal==0){
-            answer[0]=6-zero+1;
-            answer[1]=6;
+        if ( equal == 0 && zero == 0 ) {
+            answer[0] = 6;
+            answer[1] = 6;
+        } else if ( equal == 0 ) {
+            answer[0] = 6 - zero + 1;
+            answer[1] = 6;
         } else {
-            answer[0]=7-equal-zero;
-            answer[1]=7-equal;
+            answer[0] = 7 - equal - zero;
+            answer[1] = 7 - equal;
         }
         return answer;
     }
