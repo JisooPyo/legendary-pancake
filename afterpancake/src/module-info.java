@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author ShU
- *
- */
-module ProgrammersTest {
-}
