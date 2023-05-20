@@ -1,5 +1,5 @@
 // 로또의 최고 순위와 최저 순위
-package test230514;
+package test2305.test230514;
 
 import java.util.Arrays;
 

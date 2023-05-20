@@ -1,5 +1,5 @@
 // 추억 점수
-package test230510;
+package test2305.test230510;
 
 import java.util.Arrays;
 

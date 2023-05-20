@@ -1,7 +1,5 @@
 // 덧칠하기
-package test230514;
-
-import java.util.Arrays;
+package test2305.test230514;
 
 public class Lev1_12 {
     public static void main( String[] args ) {

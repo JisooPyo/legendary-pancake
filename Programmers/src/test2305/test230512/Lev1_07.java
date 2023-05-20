@@ -1,6 +1,6 @@
 // 명예의 전당
 
-package test230512;
+package test2305.test230512;
 
 import java.util.ArrayList;
 import java.util.Arrays;

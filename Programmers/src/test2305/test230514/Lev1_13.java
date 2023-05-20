@@ -1,5 +1,5 @@
 // 기사단원의 무기
-package test230514;
+package test2305.test230514;
 
 public class Lev1_13 {
     public static void main( String[] args ) {

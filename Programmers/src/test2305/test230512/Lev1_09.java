@@ -1,5 +1,5 @@
 // 실패율
-package test230512;
+package test2305.test230512;
 
 import java.util.Arrays;
 import java.util.Comparator;

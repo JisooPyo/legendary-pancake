@@ -1,5 +1,5 @@
 // 과일장수
-package test230512;
+package test2305.test230512;
 
 import java.util.Arrays;
 

@@ -1,5 +1,5 @@
 // 숫자 짝꿍
-package test230516;
+package test2305.test230516;
 
 import java.util.Arrays;
 
