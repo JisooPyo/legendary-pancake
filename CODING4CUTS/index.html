@@ -1,0 +1,48 @@
+<!-- 느낌표 + Tab을 누르면 html의 기본 골격을 빠르게 적을 수 있다. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>코딩네컷 만들기</title>
+    <link href="index_style.css" rel="stylesheet" />
+    <script src="index_js.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame" onmouseover="showText(1)" onmouseout="hideText(1)"
+                onclick="alertText(1)">
+                <span id="desc1" class="photo-description">
+                    첫 번째 이미지 설명
+                </span>
+            </div>
+            <div id="image2" class="photo-frame" onmouseover="showText(2)" onmouseout="hideText(2)"
+                onclick="alertText(2)">
+                <span id="desc2" class="photo-description">
+                    두 번째 이미지 설명
+                </span>
+            </div>
+            <div id="image3" class="photo-frame" onmouseover="showText(3)" onmouseout="hideText(3)"
+                onclick="alertText(3)">
+                <span id="desc3" class="photo-description">
+                    세 번째 이미지 설명
+                </span>
+            </div>
+            <!-- src : source, 즉 자료의 원천이 어디있는지를 의미해요! -->
+
+            <div class="photo-frame">
+                <iframe class="video" src="https://www.youtube.com/embed/agYZbSt-3LY" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="f-title">Happy Lunch Time</p>
+            <p class="f-date">2023.05.21</p>
+        </div>
+    </div>
+</body>
+
+</html>
