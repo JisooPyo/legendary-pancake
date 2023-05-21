@@ -48,6 +48,7 @@ body {
 .footer {
     display: flex;
     flex-direction: column;
+    /* row가 되면 왼쪽 오른쪽으로 정렬됨. */
     align-items: center;
 }
 
@@ -82,18 +83,22 @@ body {
 }
 
 .photo-description {
-    color: white;
+    color:white;
     background-color: black;
+
     width: fit-content;
     padding: 0 20px;
     margin-bottom: 10px;
+
     border-radius: 10px;
+
     position: absolute;
-    bottom: 0;
+    bottom:0;
     transform: translate(-50%);
-    left: 50%;
-    opacity: 0;
+    left:50%;
     /* 초반에 페이지 열릴 때 기본으로 안보이게 하기 위한 설정이에요 */
+
+    opacity: 0;
 }
 
 .video {
@@ -111,4 +116,5 @@ body {
 /* transition : 나타날 때 0.5초동안 천천히 나타나는 효과를 주라는 의미에요 */
 .hideText {
     opacity: 0;
+    
 }
