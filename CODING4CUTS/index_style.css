@@ -83,7 +83,7 @@ body {
 }
 
 .photo-description {
-    color:white;
+    color: white;
     background-color: black;
 
     width: fit-content;
@@ -93,9 +93,9 @@ body {
     border-radius: 10px;
 
     position: absolute;
-    bottom:0;
+    bottom: 0;
     transform: translate(-50%);
-    left:50%;
+    left: 50%;
     /* 초반에 페이지 열릴 때 기본으로 안보이게 하기 위한 설정이에요 */
 
     opacity: 0;
@@ -116,5 +116,108 @@ body {
 /* transition : 나타날 때 0.5초동안 천천히 나타나는 효과를 주라는 의미에요 */
 .hideText {
     opacity: 0;
-    
+
+}
+
+@keyframes rtanee {
+    0% {
+        bottom: 0px;
+    }
+
+    100% {
+        bottom: 100px;
+    }
+}
+
+.absolute-rtan-area {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    /* 아이콘 이동 애니메이션 관련 설정 */
+    animation-name: rtanee;
+    animation-duration: 2s;
+    animation-duration: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.absolute-rtan-area img {
+    width: 150px;
+    cursor: pointer;
+}
+
+#modal.modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(1.5px);
+    border-radius: 10px;
+    display: none;
+}
+
+#modal .modal-window {
+    background: white;
+    box-shadow: 0 8px 32px 0 grey;
+    backdrop-filter: blur(13.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 350px;
+    height: 350px;
+    position: relative;
+    padding: 10px;
+}
+
+#modal .close-area {
+    display: inline;
+    float: right;
+    padding-right: 10px;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    right: 0;
+}
+
+#modal .content {
+    margin-top: 10px;
+    padding: 0px 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal .content img {
+    width: 65%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#modal .content span {
+    font-size: 20px;
+    margin: 2px;
+    font-weight: 900;
+    font-family: auto;
+}
+
+#modal .content button {
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    height: 50px;
+    color: white;
+    background: green;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
 }

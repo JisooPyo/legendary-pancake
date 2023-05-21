@@ -35,3 +35,13 @@ function hideText(number) {
 function alertText(number) {
     alert(`${number}번째 추억이에요! 눌러주셔서 감사합니다 :)`);
 }
+
+function showModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.style.display = "none";
+}

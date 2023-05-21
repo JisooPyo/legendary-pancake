@@ -17,7 +17,7 @@
             <div id="image1" class="photo-frame" onmouseover="showText(1)" onmouseout="hideText(1)"
                 onclick="alertText(1)">
                 <span id="desc1" class="photo-description">
-                    우리 작년 1월에 동해 갔을때 :)
+                    우리 작년 1월에 동해 갔을때!
                 </span>
             </div>
             <div id="image2" class="photo-frame" onmouseover="showText(2)" onmouseout="hideText(2)"
@@ -41,6 +41,25 @@
         <div class="footer">
             <p class="f-title">Happy Lunch Time</p>
             <p class="f-date">2023.05.21</p>
+        </div>
+    </div>
+
+    <div class="absolute-rtan-area">
+        <img src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free_photos/rtans.png"
+            onclick="showModal()" />
+    </div>
+
+    <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="close-area" onclick="closeModal()">𝗫</div>
+            <div class="content">
+                <img src="./rtans.png" />
+                <span>여기까지 온 당신</span>
+                <span>개발자가 적성일지도?</span>
+                <button onclick="location.href='https://spartacodingclub.kr/'">
+                    0원으로 개발자 시작하기
+                </button>
+            </div>
         </div>
     </div>
 </body>
