@@ -1,3 +1,4 @@
+// 바탕화면 정리
 package test2306.test230603;
 
 import java.util.Arrays;
