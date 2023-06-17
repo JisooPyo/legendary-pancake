@@ -1,5 +1,5 @@
 // 신고 결과 받기
-package test2306.test230612;
+package test2306;
 
 import java.util.Arrays;
 
